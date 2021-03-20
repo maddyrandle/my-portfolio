@@ -6,8 +6,7 @@ export default function Project() {
 
   useEffect(() => {
     sanityClient
-      .fetch(
-        `
+      .fetch(`
       *[_type == "project"]{
         title,
         date,
@@ -17,8 +16,7 @@ export default function Project() {
         link,
         tags
       }
-    `
-      )
+    `)
       .then((data) => setProjectData(data))
       .catch(console.error);
   }, []);
@@ -62,7 +60,7 @@ export default function Project() {
                   </p>
                   <a
                     href={project.link}
-                    rel="noopener no referrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                     className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
                   >
