@@ -26,7 +26,7 @@ export default function Project() {
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my Projects Page!
+          Welcome to my Projects Page!!
         </h2>
         <section className="grid md:grid-cols-2 gap-8">
           {projectData &&
